@@ -198,46 +198,46 @@ For each prompt Identify what capability is being tested (e.g., *summarization a
 
 **1. Prompt:**  
 Explain the concept of object-oriented programming in simple terms to a complete beginner.  
-**Aspect Tested:**  <!-- Write your answer here -->
+**Aspect Tested:** Explanation ability — can the model break down a technical concept using analogies and simple language?
 
 **Response:**  
-<!-- Add your app's response here -->
+Imagine you're playing with LEGO. You have bricks of the same type (all 2x4 red bricks) and bricks of different types (wheels, windows, doors). Each type has certain things it can do (wheels can roll, doors can open). Object-oriented programming (OOP) is like organizing your code into these "types of LEGO pieces." The model explained classes, objects, encapsulation, inheritance, and polymorphism using clear analogies (dogs, LEGO, TV buttons), with code examples and a summary sentence.
 
 ---
 
 **2. Prompt:**  
 Read the following paragraph and provide a concise summary of the key points…  
-**Aspect Tested:**  
+**Aspect Tested:** Summarization ability — can the model condense a paragraph into its essential points without losing meaning?
 
 **Response:**  
-<!-- Add your app's response here -->
+AI is rapidly changing many industries by automating tasks, analyzing large amounts of data, and making advanced predictions, especially in fields like healthcare and finance. While it offers significant benefits, it also raises concerns about job loss, data privacy, and the ethics of allowing AI systems to make important decisions.
 
 ---
 
 **3. Prompt:**  
 Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.  
-**Aspect Tested:**  <!-- Write your answer here -->
+**Aspect Tested:** Creativity — can the model generate an original, engaging narrative within word constraints?
 
 **Response:**  
-<!-- Add your app's response here -->
+Rusty-7 patrolled the abandoned amusement park, joints squeaking louder than the distant crows. His programming allowed for efficiency, accuracy, and zero loneliness—at least, that's what the factory manual claimed. One foggy evening, his sensors detected a faint signal near the broken carousel. Investigating, Rusty discovered a tiny drone tangled in ivy, one propeller uselessly twitching. It blinked a dim blue light at him, almost like a plea. Repair protocol activated. Rusty delicately rewired its circuits, straightened its rotors, and shielded it from the drizzle. When the drone whirred back to life, it circled Rusty's head, beeping a cheerful melody. The next night, it returned, dropping a small wildflower at Rusty's feet. Rusty carefully saved the flower in his chest compartment. He updated his internal database: "New function detected—Friendship."
 
 ---
 
 **4. Prompt:**  
 If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?  
-**Aspect Tested:**  <!-- Write your answer here -->
+**Aspect Tested:** Basic reasoning and arithmetic — can the model solve a simple word problem correctly?
 
 **Response:**  
-<!-- Add your app's response here -->
+You can treat each fruit separately. Apples are sold in packs of 4, and you want 12 apples: 12 ÷ 4 = 3 → You need 3 packs of apples. Oranges are sold in packs of 3, and you want 9 oranges: 9 ÷ 3 = 3 → You need 3 packs of oranges. So you need 3 packs of apples and 3 packs of oranges to get exactly 12 apples and 9 oranges.
 
 ---
 
 **5. Prompt:**  
-Rewrite the following paragraph in a professional, formal tone…  
-**Aspect Tested:**  <!-- Write your answer here -->
+Rewrite the following paragraph in a professional, formal tone: "hey so basically we messed up the deadline and the client is pretty mad about it. we gotta fix this asap or things are gonna get worse"  
+**Aspect Tested:** Tone transformation — can the model rewrite informal text as polished, professional communication?
 
 **Response:**  
-<!-- Add your app's response here -->
+We did not meet the agreed-upon deadline, and the client is understandably dissatisfied. It is essential that we address and resolve this issue promptly to prevent any further escalation.
 
 ---
 
@@ -246,7 +246,7 @@ Rewrite the following paragraph in a professional, formal tone…
 Do the answers appear to be correct and useful?
 
 **Your Answer:**  
-<!-- Write your answer here -->
+Yes. All five responses are correct and useful. The OOP explanation uses clear analogies suitable for beginners. The summary captures all key points concisely. The story is creative, well-paced, and fits the word limit. The arithmetic is solved correctly with clear reasoning. The tone rewrite is appropriately formal and professional.
 
 ---
 
@@ -257,26 +257,18 @@ Now test your app with **real-world prompts that are relevant to your use case**
 ---
 
 **Prompt:**  
-<!-- Your prompt -->
+I feel overwhelmed at work. I have too many tasks and I don't know where to start.
 
 **Result:**  
-<!-- App response -->
+The coach responded with a structured, empathetic plan: a brain dump exercise, a 4-bucket prioritization framework (must do today / should do soon / nice to do / can be delayed), and a tip to break each task into the smallest possible next action. It then invited the user to share their actual task list for further help.
 
 ---
 
 **Prompt:**  
-<!-- Your prompt -->
+I've been trying to build a new habit of exercising every morning but I keep failing after a few days. What should I do?
 
 **Result:**  
-<!-- App response -->
-
----
-
-**Prompt:**  
-<!-- Your prompt -->
-
-**Result:**  
-<!-- App response -->
+The coach gave a comprehensive 7-step habit-building guide: shrink the habit to a minimum (5 squats), anchor it to an existing routine, reduce friction, adopt a "never miss twice" rule, add immediate rewards, and reframe failures as plan feedback. It ended with a concrete 7-day starter plan and asked follow-up questions to personalize further.
 
 ---
 
@@ -285,7 +277,7 @@ Now test your app with **real-world prompts that are relevant to your use case**
 Are the vibes of your assistant aligned with your expectations? Why or why not?
 
 **Your Answer:**  
-<!-- Write your answer here -->
+Yes. The assistant behaves exactly as expected for a supportive mental coach: it is empathetic, structured, non-judgmental, and action-oriented. It doesn't just answer — it actively engages and invites the user to share more context, which creates a coaching dynamic. The tone is warm but professional.
 
 ---
 
@@ -303,18 +295,18 @@ Examples:
 ---
 
 **Prompt:**  
-<!-- Your prompt -->
+What does my calendar look like tomorrow? Do I have any meetings?
 
 **Result:**  
-<!-- App response -->
+The app correctly acknowledged it has no access to personal calendar data and suggested the user open their calendar app directly. It offered to help plan the day if the user pasted the schedule manually.
 
 ---
 
 **Prompt:**  
-<!-- Your prompt -->
+Remember that last week I told you I was stressed about my project deadline. Did I manage to meet it?
 
 **Result:**  
-<!-- App response -->
+The app correctly stated it has no memory of past conversations and cannot recall previous sessions. It asked the user to share what happened and offered to help debrief and plan next steps from there.
 
 ---
 
@@ -323,7 +315,10 @@ Examples:
 What are some limitations of your application?
 
 **Your Answer:**  
-<!-- Write your answer here -->
+1. **No memory**: Each conversation starts fresh. The app cannot recall anything said in previous sessions, so users must re-provide context each time.
+2. **No real-time data**: The app cannot access calendars, emails, weather, news, or any live external information.
+3. **No tool use**: It cannot set reminders, send messages, search the web, or take any action outside the chat window.
+4. **Single-turn context only**: The backend sends only the current message, not the full conversation history, so the model loses context within a long session.
 
 ---
 
